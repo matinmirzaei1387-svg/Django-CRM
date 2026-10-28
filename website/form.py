@@ -4,7 +4,7 @@ from django import forms
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(label="", widget=forms.TextInput(attrs={'class':'form-control' , 'placeholder':'Email Address'}))
     f_name = forms.CharField(label="", max_length=50 ,widget=forms.TextInput(attrs={'class':'form-control' , 'placeholder':'First Name'}))
-    l_name = forms.CharField(label="", max_length=50 ,widget=forms.TextInput(attrs={'class':'form-control' , 'placeholder':'First Name'}))
+    l_name = forms.CharField(label="", max_length=50 ,widget=forms.TextInput(attrs={'class':'form-control' , 'placeholder':'Last Name'}))
 
     class Meta:
         model = User
